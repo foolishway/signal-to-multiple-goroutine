@@ -15,7 +15,7 @@ func main() {
 				time.Sleep(1 * time.Second)
 				select {
 				case <-signalChn:
-					fmt.Printf("%dth received signal~\n", n)
+					fmt.Printf("%dth goroutine received signal~\n", n)
 					break loop
 				default:
 					fmt.Printf("%dth goroutine are waiting signal~\n", n)
